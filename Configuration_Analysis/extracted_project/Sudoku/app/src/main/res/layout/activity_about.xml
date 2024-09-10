@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dev.oneuiproject.oneui.layout.AppInfoLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/appInfoLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutActivity">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/about_translations"
+        style="@style/OneUI.AppInfoButton"
+        android:text="@string/translations"
+        android:visibility="gone" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/about_source_code"
+        style="@style/OneUI.AppInfoButton"
+        android:text="@string/source_code"
+        android:visibility="gone" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/about_donate"
+        style="@style/OneUI.AppInfoButton"
+        android:text="@string/donate"
+        android:visibility="gone" />
+
+</dev.oneuiproject.oneui.layout.AppInfoLayout>

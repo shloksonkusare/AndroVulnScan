@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myapp">
+
+    <!-- Define the permissions your app needs -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <!-- Define the minimum SDK version -->
+    <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="30"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- Main activity -->
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Example service -->
+        <service android:name=".MyService"/>
+        
+        <!-- Example receiver -->
+        <receiver android:name=".MyReceiver"/>
+        
+        <!-- Example provider -->
+        <provider
+            android:name=".MyProvider"
+            android:authorities="com.example.myapp.provider"
+            android:exported="false"/>
+        
+    </application>
+</manifest>
